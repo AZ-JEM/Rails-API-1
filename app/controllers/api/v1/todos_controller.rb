@@ -8,8 +8,8 @@ module Api
       # LIST :
       # ---------------------------------------------------------------------- /
       def index
-        todos = Todo.all
-        render json: {status: 'SUCCESS', message: 'todos loaded', data: todos}, status: :ok
+        @todos = Todo.all
+        render json: {status: 'SUCCESS', message: 'todos loaded', data: @todos}, status: :ok
       end
 
       # ---------------------------------------------------------------------- /
