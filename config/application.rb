@@ -33,15 +33,16 @@ module Tdapi
     config.api_only = true
 
     # ---------------------------------------------------------------------- /
+    # NO, NO, NO : NOT HERE YOU FREAKIN' BONEHEAD
     # JEM : 180624
     # completely PUBLIC API
     # ---------------------------------------------------------------------- /
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :options]
-      end
-    end
+    # config.middleware.insert_before 0, Rack::Cors do
+    #   allow do
+    #     origins '*'
+    #     resource '*', headers: :any, methods: [:get, :post, :options]
+    #   end
+    # end
 
   end
 end
