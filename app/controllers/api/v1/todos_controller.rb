@@ -4,7 +4,7 @@ module Api
 
       before_action :select_todo, only: [:show, :update, :destroy]
       # JEM
-      skip_before_action :verify_authenticity_token
+      # skip_before_action :verify_authenticity_token
 
       # ---------------------------------------------------------------------- /
       # LIST :
