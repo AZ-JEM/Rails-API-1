@@ -1,6 +1,8 @@
 module Api
   module V1
     class TodosController < ApplicationController
+      # JEM
+      skip_before_action :verify_authenticity_token
 
       before_action :select_todo, only: [:show, :update, :destroy]
 
