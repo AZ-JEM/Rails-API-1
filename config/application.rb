@@ -33,7 +33,6 @@ module Tdapi
     config.api_only = true
 
     # ---------------------------------------------------------------------- /
-    # NO, NO, NO : NOT HERE YOU FREAKIN' BONEHEAD
     # JEM : 180624
     # completely PUBLIC API
     # ---------------------------------------------------------------------- /
